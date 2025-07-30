@@ -1,0 +1,19 @@
+{
+  "name": "septic-sense-pro",
+  "version": "1.0.0",
+  "description": "Professional septic services website",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy && npx tailwindcss -i ./src/css/style.css -o ./_site/css/style.css --minify",
+    "start": "eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3"
+  }
+}
