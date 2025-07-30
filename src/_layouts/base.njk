@@ -6,15 +6,15 @@
     <title>{{ title }} | SepticSense</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
-<body class="bg-white font-sans text-gray-800">
+<body class="bg-white font-sans text-gray-800 flex flex-col min-h-screen">
 
     {% include "header.njk" %}
 
-    <main>
+    <main class="flex-grow">
         {{ content | safe }}
     </main>
 
-    <!-- Footer will go here later -->
+    {% include "footer.njk" %}
 
 </body>
 </html>
