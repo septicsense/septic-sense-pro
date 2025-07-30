@@ -1,0 +1,23 @@
+backend:
+  name: git-gateway
+  branch: main # The branch to update
+
+# This line should be changed to your domain after deployment
+# publish_mode: editorial_workflow
+
+media_folder: "src/assets/images/uploads" # Where media files will be stored
+public_folder: "/assets/images/uploads" # The public path to media files
+
+collections:
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog Posts" # Used in the UI
+    folder: "src/posts" # The path to the folder where blog posts are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template
+    fields: # The fields for each document, usually in front matter
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post.njk" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Author", name: "author", widget: "string", default: "The SepticSense Team" }
+      - { label: "Featured Image", name: "featured_image", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
