@@ -1,0 +1,161 @@
+---
+layout: "base.njk"
+title: "Septic System Care Blog"
+---
+
+<!-- ============================================ -->
+<!-- Featured Article Section -->
+<!-- ============================================ -->
+<section class="bg-light-gray py-16">
+    <div class="container mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <!-- Content -->
+            <div>
+                <p class="font-bold text-brand-blue">Featured Article</p>
+                <h1 class="text-4xl font-bold text-dark-navy mt-2">5 Critical Signs Your Septic Tank Needs Immediate Attention</h1>
+                <p class="mt-4 text-gray-600">Learn to identify warning signs before they become expensive problems. Early detection can save thousands in repair costs and prevent environmental damage.</p>
+                <div class="mt-6 flex items-center">
+                    <img src="/assets/images/blog-featured-author.png" alt="Dr. Robert Martinez" class="w-14 h-14 rounded-full border-2 border-white shadow-md">
+                    <div class="ml-4">
+                        <p class="font-bold text-dark-navy">Dr. Robert Martinez</p>
+                        <p class="text-sm text-gray-500">Septic Systems Expert - 20+ Years Experience</p>
+                    </div>
+                </div>
+                <div class="mt-8 flex gap-4">
+                    <a href="#" class="bg-brand-blue text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700">Read Full Article</a>
+                    <a href="#" class="bg-white border border-gray-300 text-dark-navy font-bold py-3 px-6 rounded-lg hover:bg-gray-100">Share Article</a>
+                </div>
+            </div>
+            <!-- Image -->
+            <div>
+                <!-- Re-using an image from the homepage upload -->
+                <img src="/assets/images/blog-image-1.png" alt="Signs a septic tank needs attention" class="rounded-lg shadow-2xl">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!-- Main Content Area: Articles & Sidebar -->
+<!-- ============================================ -->
+<div class="container mx-auto px-6 py-16 grid lg:grid-cols-4 gap-12">
+
+    <!-- Left Content: Articles -->
+    <main class="lg:col-span-3">
+        <!-- Search and Filter Bar -->
+        <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+            <div class="relative w-full md:w-1/2">
+                <input type="search" placeholder="Search Articles..." class="w-full p-3 pl-10 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-blue focus:outline-none">
+                <div class="absolute top-0 left-0 inline-flex items-center justify-center h-full w-10 text-gray-400">
+                     <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                </div>
+            </div>
+            <div class="flex items-center mt-4 md:mt-0">
+                <label for="sort" class="mr-2 text-gray-600">Sort by:</label>
+                <select id="sort" class="border border-gray-300 rounded-lg p-2">
+                    <option>Latest</option>
+                    <option>Most Popular</option>
+                </select>
+            </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-dark-navy mb-6">Latest Articles</h2>
+        
+        <!-- Articles Grid -->
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Blog Post Card -->
+            <div class="bg-white rounded-lg shadow-md border overflow-hidden">
+                <img src="/assets/images/blog-winterize.png" alt="Winterizing a septic system" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <p class="text-sm text-brand-blue font-semibold">Maintenance Tips</p>
+                    <h3 class="text-lg font-bold text-dark-navy mt-1">How to Properly Winterize Your Septic System Year-Round</h3>
+                    <p class="text-sm text-gray-500 mt-2">Step-by-step instructions for preparing your septic system for freezing temperatures...</p>
+                    <div class="mt-4 pt-4 border-t flex items-center justify-between text-sm">
+                        <div class="flex items-center">
+                            <span class="font-bold mr-2">JS</span>
+                            <span>John Smith</span>
+                        </div>
+                        <a href="#" class="font-bold text-brand-blue hover:underline">Read More →</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for other blog posts... -->
+        </div>
+        
+        <div class="text-center mt-12">
+            <button class="bg-white border-2 border-brand-blue text-brand-blue font-bold py-3 px-8 rounded-lg hover:bg-brand-blue hover:text-white transition duration-300">Load More Articles</button>
+        </div>
+    </main>
+
+    <!-- Right Sidebar -->
+    <aside class="lg:col-span-1">
+        <div class="bg-white p-6 rounded-lg shadow-md border">
+            <h3 class="font-bold text-dark-navy mb-4">Categories</h3>
+            <ul class="space-y-2">
+                <li><a href="#" class="flex justify-between items-center text-gray-700 hover:text-brand-blue">All Articles <span class="bg-light-gray text-xs font-bold py-1 px-2 rounded-full">25</span></a></li>
+                <li><a href="#" class="flex justify-between items-center text-gray-700 hover:text-brand-blue">Maintenance Tips <span class="bg-light-gray text-xs font-bold py-1 px-2 rounded-full">8</span></a></li>
+                <li><a href="#" class="flex justify-between items-center text-gray-700 hover:text-brand-blue">Emergency Repairs <span class="bg-red-100 text-red-700 text-xs font-bold py-1 px-2 rounded-full">4</span></a></li>
+                <li><a href="#" class="flex justify-between items-center text-gray-700 hover:text-brand-blue">RV Septic <span class="bg-light-gray text-xs font-bold py-1 px-2 rounded-full">6</span></a></li>
+                <li><a href="#" class="flex justify-between items-center text-gray-700 hover:text-brand-blue">Seasonal Care <span class="bg-light-gray text-xs font-bold py-1 px-2 rounded-full">7</span></a></li>
+            </ul>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md border mt-8">
+            <h3 class="font-bold text-dark-navy mb-4">Popular Posts</h3>
+            <ul class="space-y-4">
+                <li>
+                    <a href="#" class="flex items-center gap-4 group">
+                        <!-- Reusing an image -->
+                        <img src="/assets/images/blog-image-2.png" alt="RV Septic Guide" class="w-16 h-16 rounded-md object-cover">
+                        <div>
+                            <p class="font-bold text-sm text-dark-navy group-hover:text-brand-blue">Complete RV Septic Maintenance Guide</p>
+                        </div>
+                    </a>
+                </li>
+                 <li>
+                    <a href="#" class="flex items-center gap-4 group">
+                         <!-- Reusing an image -->
+                        <img src="/assets/images/blog-image-3.png" alt="DIY vs Pro" class="w-16 h-16 rounded-md object-cover">
+                        <div>
+                            <p class="font-bold text-sm text-dark-navy group-hover:text-brand-blue">DIY vs Professional: When to Call Experts</p>
+                        </div>
+                    </a>
+                </li>
+                 <li>
+                    <a href="#" class="flex items-center gap-4 group">
+                        <img src="/assets/images/blog-winterize.png" alt="Winter septic system" class="w-16 h-16 rounded-md object-cover">
+                        <div>
+                            <p class="font-bold text-sm text-dark-navy group-hover:text-brand-blue">Winter Septic System Protection and Maintenance</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="bg-light-gray p-6 rounded-lg border mt-8 text-center">
+            <h3 class="font-bold text-dark-navy">Stay Updated</h3>
+            <p class="text-sm mt-1 text-gray-600">Get weekly septic care tips and alerts delivered to your inbox.</p>
+            <form class="mt-4 space-y-2">
+                <input type="email" placeholder="Enter your email" class="w-full p-2 rounded-md border" required>
+                <button type="submit" class="w-full bg-brand-green text-white font-bold py-2 rounded-md hover:bg-green-700">Subscribe Now</button>
+            </form>
+        </div>
+    </aside>
+</div>
+
+<!-- ============================================ -->
+<!-- CTA Banner Section -->
+<!-- ============================================ -->
+<section class="bg-white pb-16">
+    <div class="container mx-auto px-6">
+        <div class="bg-dark-navy text-white p-12 rounded-lg text-center shadow-xl">
+             <div class="text-brand-blue text-4xl mb-2">★</div>
+            <h2 class="text-3xl font-bold">Get Your Free Septic Troubleshooting Guide</h2>
+            <p class="mt-2 max-w-2xl mx-auto">Instant download - no spam - unsubscribe at anytime.</p>
+            <form class="mt-6 flex flex-col sm:flex-row gap-2 max-w-lg mx-auto">
+                <input type="email" placeholder="Enter your email" class="w-full p-3 rounded-lg border border-gray-700 bg-gray-800 text-white focus:ring-2 focus:ring-brand-blue focus:outline-none" required>
+                <button type="submit" class="bg-brand-blue text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700">Get Free Guide</button>
+            </form>
+        </div>
+    </div>
+</section>
