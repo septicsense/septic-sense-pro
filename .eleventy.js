@@ -7,9 +7,6 @@ module.exports = function(eleventyConfig) {
     // Add a watch target for our compiled CSS.
     eleventyConfig.addWatchTarget("./_site/css/style.css");
 
-    // Shortcode for the current year
-    eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
-
     // Return the configuration object
     return {
         dir: {
