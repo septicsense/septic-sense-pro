@@ -1,34 +1,25 @@
 module.exports = function(eleventyConfig) {
-  // Add the 'year' shortcode to get the current year.
-  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+    // Correctly handle passthrough copies for assets and admin panel
+    eleventyConfig.addPassthroughCopy("src/assets");
+    eleventyConfig.addPassthroughCopy("src/admin");
+    eleventyConfig.addPassthroughCopy({"src/css/style.css": "css/style.css"});
 
-  // Tell Eleventy to watch our compiled CSS file for changes.
-  eleventyConfig.addWatchTarget("./_site/css/style.css");
+    // Add a watch target for our compiled CSS.
+    eleventyConfig.addWatchTarget("./_site/css/style.css");
 
-  // Tell Eleventy to copy the /src/assets/ folder to the /_site/assets/ folder.
-  eleventyConfig.addPassthroughCopy("src/assets");
-  
-  // Tell Eleventy to copy the /src/admin/ folder to the /_site/admin/ folder.
-  eleventyConfig.addPassthroughCopy("src/admin");
+    // Shortcode for the current year
+    eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
-  // Configure the input and output directories.
-  return {
-    dir: {
-      input: "src",
-      includes: "_includes",
-      layouts: "_layouts",
-      data: "_data",
-      output: "_site"
-    },
-    // Files to process as templates
-    templateFormats: [
-      "md",
-      "njk",
-      "html"
-    ],
-    // Let Nunjucks process HTML files
-    htmlTemplateEngine: "njk",
-    // Let Nunjucks process Markdown files
-    markdownTemplateEngine: "njk"
-  };
+    // Return the configuration object
+    return {
+        dir: {
+            input: "src",
+            includes: "_includes",
+            layouts: "_layouts",
+            output: "_site"
+        },
+        templateFormats: ["html", "njk", "md"],
+        htmlTemplateEngine: "njk",
+        markdownTemplateEngine: "njk"
+    };
 };
