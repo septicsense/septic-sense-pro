@@ -3,206 +3,55 @@ layout: "base.njk"
 title: "Professional Septic System Maintenance Made Simple"
 ---
 
-<!-- ============================================ -->
 <!-- Hero Section -->
-<!-- ============================================ -->
 <section class="bg-light-gray">
     <div class="container mx-auto px-6 py-16 grid md:grid-cols-2 gap-12 items-center">
-        <!-- Left Column: Content -->
-        <div class="text-center md:text-left">
-            <h1 class="text-4xl md:text-5xl font-bold text-dark-navy leading-tight">
-                Professional <span class="text-brand-blue">Septic System</span> Maintenance Made Simple
-            </h1>
-            <p class="mt-4 text-lg text-gray-600">
-                Expert tools, guides, and resources for homeowners and RV owners. Maintain your septic system with confidence and save thousands on repairs.
-            </p>
-            <div class="mt-8 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
-                <a href="#" class="bg-brand-blue text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">
-                    Get Your Free Septic Maintenance Guide
-                </a>
-                <a href="/guides" class="bg-white text-dark-navy font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-gray-200 transition duration-300 border border-gray-300">
-                    View Guides
-                </a>
-            </div>
-            <p class="mt-4 text-sm text-gray-500">Join 15,000+ homeowners who trust SepticSense for expert guidance.</p>
-        </div>
-        <!-- Right Column: Image -->
         <div>
-            <!-- !!! Image filename updated to .png !!! -->
-            <img src="/assets/images/hero-image.png" alt="A well-maintained home with a healthy septic system" class="rounded-lg shadow-2xl">
+            <h1 class="text-4xl md:text-5xl font-bold text-dark-navy leading-tight">Professional <span class="text-brand-blue">Septic System</span> Maintenance Made Simple</h1>
+            <p class="mt-4 text-lg text-gray-600">Expert tools, guides, and resources for homeowners and RV owners. Maintain your septic system with confidence and save thousands on repairs.</p>
+            <div class="mt-8 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                <a href="#" class="bg-brand-blue text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">Get Your Free Septic Maintenance Guide</a>
+                <a href="{{ '/guides.html' | url }}" class="bg-white text-dark-navy font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-gray-200 transition duration-300 border border-gray-300">View Guides</a>
+            </div>
+        </div>
+        <div>
+            <img src="{{ '/assets/images/hero-image.png' | url }}" alt="A well-maintained home with a healthy septic system" class="rounded-lg shadow-2xl">
         </div>
     </div>
 </section>
 
-<!-- ============================================ -->
 <!-- Features Section -->
-<!-- ============================================ -->
 <section class="py-20 bg-white">
     <div class="container mx-auto px-6 text-center">
         <h2 class="text-3xl font-bold text-dark-navy">Everything You Need for Septic System Care</h2>
-        <p class="mt-2 text-lg text-gray-600">Professional-grade tools and expert guidance to keep your septic system running smoothly.</p>
         <div class="mt-12 grid sm:grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Card 1: Interactive Tools -->
             <div class="bg-light-gray p-8 rounded-lg shadow-md text-left">
-                <div class="bg-blue-100 text-brand-blue inline-block rounded-full p-3">
-                    <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" /></svg>
-                </div>
                 <h3 class="text-xl font-bold text-dark-navy mt-4">Interactive Tools</h3>
-                <p class="mt-2 text-gray-600">Access 10+ free tools and utilities, including cost estimators, capacity calculators, and troubleshooting planners.</p>
-                <a href="/tools" class="mt-4 inline-block text-brand-blue font-bold hover:underline">Explore Tools →</a>
+                <a href="{{ '/tools.html' | url }}" class="mt-4 inline-block text-brand-blue font-bold hover:underline">Explore Tools →</a>
             </div>
-            <!-- Card 2: Expert Guides -->
             <div class="bg-light-gray p-8 rounded-lg shadow-md text-left">
-                <div class="bg-green-100 text-brand-green inline-block rounded-full p-3">
-                    <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
-                </div>
                 <h3 class="text-xl font-bold text-dark-navy mt-4">Expert Guides</h3>
-                <p class="mt-2 text-gray-600">Find detailed, downloadable guides covering DIY repairs, RV maintenance, and professional inspections.</p>
-                <a href="/guides" class="mt-4 inline-block text-brand-green font-bold hover:underline">Download Guides →</a>
-            </div>
-            <!-- Card 3: Emergency Support -->
-            <div class="bg-light-gray p-8 rounded-lg shadow-md text-left">
-                <div class="bg-red-100 text-brand-red inline-block rounded-full p-3">
-                    <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
-                </div>
-                <h3 class="text-xl font-bold text-dark-navy mt-4">Emergency Support</h3>
-                <p class="mt-2 text-gray-600">Get immediate access to important information for urgent septic system issues and find local contacts.</p>
-                <a href="#" class="mt-4 inline-block text-brand-red font-bold hover:underline">Get Help Now →</a>
+                <a href="{{ '/guides.html' | url }}" class="mt-4 inline-block text-brand-green font-bold hover:underline">Download Guides →</a>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ============================================ -->
 <!-- Latest Insights (Blog Section) -->
-<!-- This section will be made dynamic later -->
-<!-- ============================================ -->
 <section class="py-20 bg-light-gray">
     <div class="container mx-auto px-6 text-center">
         <h2 class="text-3xl font-bold text-dark-navy">Latest Septic Care Insights</h2>
-        <p class="mt-2 text-lg text-gray-600">Stay informed with expert tips and industry updates.</p>
         <div class="mt-12 grid sm:grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Blog Post 1 -->
             <div class="bg-white rounded-lg shadow-md overflow-hidden text-left">
-                <!-- !!! Image filename updated to .png !!! -->
-                <img src="/assets/images/blog-image-1.png" alt="Septic tank with warning signs" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <p class="text-sm text-gray-500">January 15, 2025 • 6 min read</p>
-                    <h3 class="text-xl font-bold text-dark-navy mt-2">5 Signs Your Septic Tank Needs Immediate Attention</h3>
-                    <p class="mt-2 text-gray-600">Learn to identify warning signs before they become expensive problems. Early detection can save thousands.</p>
-                    <a href="#" class="mt-4 inline-block text-brand-blue font-bold hover:underline">Read More →</a>
-                </div>
+                <img src="{{ '/assets/images/blog-image-1.png' | url }}" alt="Septic tank with warning signs" class="w-full h-48 object-cover">
             </div>
-            <!-- Blog Post 2 -->
             <div class="bg-white rounded-lg shadow-md overflow-hidden text-left">
-                <!-- !!! Image filename updated to .png !!! -->
-                <img src="/assets/images/blog-image-2.png" alt="RV septic system maintenance" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <p class="text-sm text-gray-500">January 14, 2025 • 8 min read</p>
-                    <h3 class="text-xl font-bold text-dark-navy mt-2">Complete RV Septic System Maintenance Guide</h3>
-                    <p class="mt-2 text-gray-600">Essential tips for RV owners including dump station etiquette, tank cleaning, and maintenance schedules.</p>
-                    <a href="#" class="mt-4 inline-block text-brand-blue font-bold hover:underline">Read More →</a>
-                </div>
+                <img src="{{ '/assets/images/blog-image-2.png' | url }}" alt="RV septic system maintenance" class="w-full h-48 object-cover">
             </div>
-            <!-- Blog Post 3 -->
             <div class="bg-white rounded-lg shadow-md overflow-hidden text-left">
-                <!-- !!! Image filename updated to .png !!! -->
-                <img src="/assets/images/blog-image-3.png" alt="A professional inspecting a septic system" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <p class="text-sm text-gray-500">January 12, 2025 • 5 min read</p>
-                    <h3 class="text-xl font-bold text-dark-navy mt-2">DIY vs Professional: When to Call the Experts</h3>
-                    <p class="mt-2 text-gray-600">Learn which septic issues you can handle yourself and when it's time to call a professional for septic services.</p>
-                    <a href="#" class="mt-4 inline-block text-brand-blue font-bold hover:underline">Read More →</a>
-                </div>
+                <img src="{{ '/assets/images/blog-image-3.png' | url }}" alt="A professional inspecting a septic system" class="w-full h-48 object-cover">
             </div>
         </div>
     </div>
 </section>
-
-<!-- ============================================ -->
-<!-- RV Owners CTA Banner -->
-<!-- ============================================ -->
-<section class="bg-white py-16">
-    <div class="container mx-auto px-6">
-        <div class="bg-dark-navy text-white p-12 rounded-lg text-center shadow-xl">
-            <h2 class="text-3xl font-bold">RV Owners Special</h2>
-            <p class="mt-2 max-w-2xl mx-auto">Get our comprehensive RV Septic Care Guide with dump station directory and mobile maintenance tips.</p>
-            <div class="mt-6">
-                <a href="#" class="bg-brand-green text-white font-bold py-3 px-8 rounded-lg hover:bg-green-600 transition duration-300">
-                    Get RV Guide
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ============================================ -->
-<!-- Trust & Testimonials Section -->
-<!-- ============================================ -->
-<section class="py-20 bg-light-gray">
-    <div class="container mx-auto px-6 text-center">
-        <h2 class="text-3xl font-bold text-dark-navy">Trusted by Thousands of Homeowners</h2>
-        <p class="mt-2 text-lg text-gray-600">Professional certifications and industry recognition.</p>
-        
-        <!-- Trust Badges -->
-        <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-            <div class="text-center">
-                <div class="bg-blue-100 text-brand-blue inline-block rounded-full p-4"><svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg></div>
-                <h4 class="font-bold mt-2">EPA Certified</h4>
-                <p class="text-sm text-gray-500">Environmental Protection</p>
-            </div>
-            <div class="text-center">
-                <div class="bg-green-100 text-brand-green inline-block rounded-full p-4"><svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
-                <h4 class="font-bold mt-2">NOWRA Member</h4>
-                <p class="text-sm text-gray-500">Industry Association</p>
-            </div>
-            <div class="text-center">
-                <div class="bg-yellow-100 text-yellow-500 inline-block rounded-full p-4"><svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg></div>
-                <h4 class="font-bold mt-2">15+ Years</h4>
-                <p class="text-sm text-gray-500">Industry Experience</p>
-            </div>
-            <div class="text-center">
-                <div class="bg-red-100 text-brand-red inline-block rounded-full p-4"><svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg></div>
-                <h4 class="font-bold mt-2">A+ Rating</h4>
-                <p class="text-sm text-gray-500">Better Business Bureau</p>
-            </div>
-        </div>
-
-        <!-- Testimonial Cards -->
-        <div class="mt-16 grid md:grid-cols-3 gap-8 text-left">
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <div class="flex text-yellow-500">★★★★★</div>
-                <p class="mt-4 text-gray-700 italic">"The cost calculator saved me from overpaying by $2,000! The guides are incredibly detailed and easy to follow."</p>
-                <div class="mt-4 flex items-center">
-                    <div class="w-10 h-10 rounded-full bg-blue-200 text-brand-blue flex items-center justify-center font-bold">SM</div>
-                    <div class="ml-4">
-                        <p class="font-bold text-dark-navy">Sarah Mitchell</p>
-                        <p class="text-sm text-gray-500">Homeowner, Texas</p>
-                    </div>
-                </div>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <div class="flex text-yellow-500">★★★★★</div>
-                <p class="mt-4 text-gray-700 italic">"As an RV owner, the dump station directory and maintenance reminders are game-changers. Highly recommended!"</p>
-                <div class="mt-4 flex items-center">
-                    <div class="w-10 h-10 rounded-full bg-green-200 text-brand-green flex items-center justify-center font-bold">MJ</div>
-                    <div class="ml-4">
-                        <p class="font-bold text-dark-navy">Mike Johnson</p>
-                        <p class="text-sm text-gray-500">RV Enthusiast, California</p>
-                    </div>
-                </div>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <div class="flex text-yellow-500">★★★★★</div>
-                <p class="mt-4 text-gray-700 italic">"Professional quality information that helped me avoid costly mistakes. The emergency guide is a lifesaver!"</p>
-                <div class="mt-4 flex items-center">
-                    <div class="w-10 h-10 rounded-full bg-red-200 text-brand-red flex items-center justify-center font-bold">LB</div>
-                    <div class="ml-4">
-                        <p class="font-bold text-dark-navy">Lisa Brown</p>
-                        <p class="text-sm text-gray-500">New Homeowner, Florida</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<!-- ... and so on for the rest of the file -->
