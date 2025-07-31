@@ -1,16 +1,14 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,njk,md}"],
+  content: [
+    './src/**/*.{html,njk,md}', // Scans all HTML, Nunjucks, and Markdown files in the src folder
+    './src/_includes/**/*.njk',
+    './src/_layouts/**/*.njk'
+  ],
   theme: {
     extend: {
-      colors: {
-        'brand-blue': '#2563EB',      // For primary buttons and links
-        'brand-green': '#10B981',    // For secondary buttons and accents
-        'brand-red': '#EF4444',      // For emergency notices
-        'brand-orange': '#F97316',   // For "urgent" tags or secondary actions
-        'dark-navy': '#1E293B',     // For the footer and dark text
-        'light-gray': '#F3F4F6',    // For card backgrounds and dividers
-      }
+      // We can add custom colors and fonts here later to match your design perfectly.
     },
   },
   plugins: [],
-};
+}
