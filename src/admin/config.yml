@@ -1,23 +1,35 @@
+# The backend specifies how to connect to your content.
+# In this case, we are using GitHub.
 backend:
-  name: git-gateway
-  branch: main # The branch to update
+  name: github
+  repo: YOUR_USERNAME/YOUR_REPOSITORY_NAME # IMPORTANT: Replace with your GitHub username and repository name
+  branch: main # The branch to publish changes to.
 
-# This line should be changed to your domain after deployment
-# publish_mode: editorial_workflow
+# This flag will redirect users from the old Git Gateway backend to the new one.
+# It is required for all new sites.
+use_graphql_api: true
 
-media_folder: "src/assets/images/uploads" # Where media files will be stored
-public_folder: "/assets/images/uploads" # The public path to media files
+# The media_folder is where all uploaded images will be stored, relative to the project root.
+media_folder: "src/assets/images/uploads"
+# The public_folder is the path to the same folder, but from the built site's root.
+public_folder: "/assets/images/uploads"
 
+# "collections" are the different types of content you can create.
+# We will start with one collection: "Blog".
 collections:
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+  - name: "blog" # Used in routes, e.g., /admin/#/collections/blog
     label: "Blog Posts" # Used in the UI
-    folder: "src/posts" # The path to the folder where blog posts are stored
+    folder: "src/posts" # The path to the folder where blog post files are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template
-    fields: # The fields for each document, usually in front matter
-      - { label: "Layout", name: "layout", widget: "hidden", default: "post.njk" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Author", name: "author", widget: "string", default: "The SepticSense Team" }
-      - { label: "Featured Image", name: "featured_image", widget: "image" }
-      - { label: "Body", name: "body", widget: "markdown" }
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template for new posts
+    extension: "md" # The file extension for new posts
+    format: "frontmatter" # Specifies that files have front matter and a body
+    fields: # The fields for each document, which appear as widgets in the CMS
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post.njk"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Category", name: "category", widget: "select", options: ["Maintenance Tips", "Emergency Repairs", "RV Care", "Seasonal Guides", "DIY Projects"]}
+      - {label: "Featured Image", name: "featured_image", widget: "image", required: false}
+      - {label: "Author", name: "author", widget: "string", default: "SepticSense Team"}
+      - {label: "Body", name: "body", widget: "markdown"}
