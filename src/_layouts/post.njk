@@ -1,0 +1,85 @@
+---
+layout: "base.njk"
+---
+
+{# Post Header Section #}
+<div class="bg-indigo-600 text-white">
+    <div class="container mx-auto px-6 text-center py-16 md:py-24">
+        <div class="max-w-4xl mx-auto">
+            <p class="text-sm font-bold uppercase text-indigo-200 tracking-wider">
+                <span class="bg-red-500 text-white px-2 py-1 rounded-md text-xs mr-2">URGENT ALERT</span>
+                {% if category %}{{ category }}{% endif %}
+            </p>
+            <h1 class="text-4xl md:text-5xl font-extrabold mt-4">{{ title }}</h1>
+            <p class="mt-4 text-lg text-indigo-100">{{ description }}</p>
+        </div>
+    </div>
+</div>
+
+{# Main Article Content #}
+<article class="bg-white">
+    <div class="container mx-auto px-6 py-16">
+        <div class="max-w-2xl mx-auto">
+
+            {# Here is where the content from your Markdown file will be injected #}
+            <div class="prose lg:prose-xl max-w-none">
+                {{ content | safe }}
+            </div>
+
+            {# Essential Resources CTA #}
+            <div class="my-16 p-8 bg-gray-50 rounded-2xl border border-gray-200">
+                <h2 class="text-2xl font-bold text-center mb-2">Essential Resources for Septic System Owners</h2>
+                <p class="text-center text-gray-600 mb-8">Don't navigate septic system ownership alone. These expert-created resources help you stay ahead of problems and maintain your system like a pro.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <!-- Resource Card -->
+                    <div class="bg-white p-6 rounded-lg border border-gray-200 text-center">
+                        <h3 class="font-bold text-lg">Ultimate Septic System Inspection Checklist</h3>
+                        <p class="text-sm text-gray-600 my-2">Never miss a critical warning sign again. This detailed checklist catches problems before they become disasters.</p>
+                        <a href="#" class="font-semibold text-blue-600 hover:text-blue-800">Download Checklist →</a>
+                    </div>
+                    <!-- Resource Card -->
+                    <div class="bg-white p-6 rounded-lg border border-gray-200 text-center">
+                        <h3 class="font-bold text-lg">Septic-Safe Product Database</h3>
+                        <p class="text-sm text-gray-600 my-2">Stop guessing what's safe – get our complete list of approved household items. Includes cleaners and personal care items.</p>
+                        <a href="#" class="font-semibold text-blue-600 hover:text-blue-800">Access Database →</a>
+                    </div>
+                </div>
+            </div>
+
+            {# FAQ Section #}
+            <div>
+                <h2 class="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+                <div class="space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <details class="group bg-gray-50 p-4 rounded-lg border border-gray-200 cursor-pointer">
+                        <summary class="flex justify-between items-center font-semibold text-gray-900">
+                            How often should I have my septic tank pumped?
+                            <svg class="w-5 h-5 transform group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </summary>
+                        <p class="mt-2 text-gray-700">Most residential septic tanks should be pumped every 3-5 years, depending on household size and usage. If you notice any of the warning signs mentioned above, don't wait for your scheduled pumping date.</p>
+                    </details>
+                    <!-- FAQ Item 2 -->
+                    <details class="group bg-gray-50 p-4 rounded-lg border border-gray-200 cursor-pointer">
+                        <summary class="flex justify-between items-center font-semibold text-gray-900">
+                            Can I fix septic problems myself?
+                            <summary>
+                        <p class="mt-2 text-gray-700">While you can handle basic maintenance like avoiding harmful chemicals, actual septic repairs should always be handled by licensed professionals. DIY repairs can be dangerous, may violate local codes, and often make problems worse.</p>
+                    </details>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</article>
+
+{# Final CTA Section #}
+<div class="bg-indigo-700 text-white">
+    <div class="container mx-auto px-6 py-16 md:py-24 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold">Don't Wait for Disaster – Take Action Today</h2>
+        <p class="max-w-3xl mx-auto mt-4 text-indigo-200">Your septic system is one of your home's most critical components, yet it's often the most neglected. The five warning signs we've covered today appear in nearly every septic failure case – but they don't have to lead to disaster.</p>
+        <div class="mt-8">
+            <a href="#" class="bg-white text-indigo-700 font-bold py-4 px-8 rounded-lg hover:bg-gray-200 text-lg">Get Your FREE Emergency Septic Kit NOW</a>
+            <p class="mt-3 text-sm text-indigo-300">Join over 15,000 homeowners who've protected their properties with our expert guidance.</p>
+        </div>
+    </div>
+</div>
