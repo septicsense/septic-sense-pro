@@ -1,142 +1,132 @@
 ---
 layout: "base.njk"
 title: "Professional Septic Tools & Calculators"
+description: "Access powerful interactive calculators and utilities designed for homeowners, RV owners, and professionals to get accurate estimates and expert guidance."
+permalink: "/tools/index.html"
 ---
 
-<!-- ============================================ -->
-<!-- Page Header Section -->
-<!-- ============================================ -->
-<section class="bg-light-gray py-12">
-    <div class="container mx-auto px-6 text-center">
-        <h1 class="text-4xl font-bold text-dark-navy">Professional Septic Tools & Calculators</h1>
-        <p class="mt-2 text-lg text-gray-600">Access 10 interactive calculators and utilities designed for homeowners and experts.</p>
-    </div>
-</section>
-
-<!-- ============================================ -->
-<!-- Main Content Area -->
-<!-- ============================================ -->
-<div class="container mx-auto px-6 py-16 grid lg:grid-cols-4 gap-12">
-
-    <!-- Left Sidebar: Quick Access -->
-    <aside class="lg:col-span-1">
-        <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-            <h3 class="font-bold text-dark-navy mb-4">Quick Access</h3>
-            <h4 class="font-semibold text-sm text-gray-500 uppercase tracking-wider">Most Popular</h4>
-            <ul class="mt-2 space-y-2 text-gray-700">
-                <li><a href="#" class="hover:text-brand-blue">Cost Calculator</a></li>
-                <li><a href="#" class="hover:text-brand-blue">Tank Capacity Calculator</a></li>
-                <li><a href="#" class="hover:text-brand-blue">RV Dump Station Directory</a></li>
-            </ul>
-
-            <h4 class="font-semibold text-sm text-gray-500 uppercase tracking-wider mt-6">Categories</h4>
-            <ul class="mt-2 space-y-2 text-gray-700">
-                <li><a href="#" class="hover:text-brand-blue">Calculators (3)</a></li>
-                <li><a href="#" class="hover:text-brand-blue">Management (4)</a></li>
-                <li><a href="#" class="hover:text-brand-blue">Data & Logging (2)</a></li>
-            </ul>
-
-             <h4 class="font-semibold text-sm text-gray-500 uppercase tracking-wider mt-6">Recent</h4>
-            <ul class="mt-2 space-y-2 text-gray-700">
-                <li><a href="#" class="hover:text-brand-blue">Newest tool added</a></li>
-            </ul>
-        </div>
-    </aside>
-
-    <!-- Right Content: Tools Grid -->
-    <main class="lg:col-span-3">
-        <!-- Search and Filter Bar -->
-        <div class="mb-8">
-            <div class="relative">
-                <input type="search" placeholder="Search tools and calculators..." class="w-full p-4 pl-12 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-blue focus:outline-none">
-                <div class="absolute top-0 left-0 inline-flex items-center justify-center h-full w-12 text-gray-400">
-                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+<div class="bg-teal-50/50">
+    {# Page Header Section #}
+    <section class="text-center py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900">Professional Septic Tools & Calculators</h1>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">Access 10 interactive calculators and utilities designed for homeowners, RV owners, and professionals. Get accurate estimates and expert guidance.</p>
+            <div class="mt-8 max-w-2xl mx-auto">
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                    <input type="search" placeholder="Search tools and calculators..." class="w-full p-4 pl-10 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div class="mt-4 flex flex-wrap justify-center gap-2">
+                    <button class="px-4 py-2 rounded-lg bg-blue-600 text-white font-semibold">All Tools</button>
+                    <button class="px-4 py-2 rounded-lg bg-white text-gray-700 font-semibold border border-gray-300 hover:bg-gray-100">Homeowners</button>
+                    <button class="px-4 py-2 rounded-lg bg-white text-gray-700 font-semibold border border-gray-300 hover:bg-gray-100">RV Owners</button>
+                    <button class="px-4 py-2 rounded-lg bg-white text-gray-700 font-semibold border border-gray-300 hover:bg-gray-100">Professionals</button>
+                    <button class="px-4 py-2 rounded-lg bg-white text-gray-700 font-semibold border border-gray-300 hover:bg-gray-100">Emergency</button>
                 </div>
             </div>
-            <div class="mt-4 flex flex-wrap gap-2">
-                <button class="bg-brand-blue text-white py-2 px-4 rounded-full text-sm font-semibold">All Tools</button>
-                <button class="bg-white border border-gray-300 text-gray-700 py-2 px-4 rounded-full text-sm font-semibold hover:bg-light-gray">Homeowners</button>
-                <button class="bg-white border border-gray-300 text-gray-700 py-2 px-4 rounded-full text-sm font-semibold hover:bg-light-gray">RV Owners</button>
-                <button class="bg-white border border-gray-300 text-gray-700 py-2 px-4 rounded-full text-sm font-semibold hover:bg-light-gray">Professionals</button>
-                <button class="bg-white border border-gray-300 text-gray-700 py-2 px-4 rounded-full text-sm font-semibold hover:bg-light-gray">Emergency</button>
-            </div>
         </div>
-
-        <!-- Tool Cards -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            <!-- Card 1: Cost Calculator -->
-            <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-200 flex flex-col">
-                <div class="bg-blue-100 text-brand-blue inline-block rounded-full p-3 self-start"><svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8a2 2 0 110-4 2 2 0 010 4zm0 12a2 2 0 100 4 2 2 0 000-4z"></path></svg></div>
-                <h3 class="text-lg font-bold text-dark-navy mt-4">Septic System Cost Calculator</h3>
-                <p class="text-sm text-gray-600 mt-2 flex-grow">Estimate repair, replacement, and maintenance costs for your septic tank.</p>
-                <div class="text-xs font-semibold mt-4"><span class="bg-green-100 text-green-800 py-1 px-2 rounded-full">Easy</span><span class="ml-2 text-gray-500">2 min</span></div>
-                <a href="#" class="w-full text-center mt-4 bg-brand-blue text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300">Use Calculator</a>
-            </div>
-
-            <!-- Card 2: Capacity Calculator -->
-            <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-200 flex flex-col">
-                <div class="bg-green-100 text-brand-green inline-block rounded-full p-3 self-start"><svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4M4 7s0 0 0 0"></path></svg></div>
-                <h3 class="text-lg font-bold text-dark-navy mt-4">Tank Capacity Calculator</h3>
-                <p class="text-sm text-gray-600 mt-2 flex-grow">Determine optimal septic tank size based on household usage and drainage.</p>
-                <div class="text-xs font-semibold mt-4"><span class="bg-green-100 text-green-800 py-1 px-2 rounded-full">Easy</span><span class="ml-2 text-gray-500">2 min</span></div>
-                <a href="#" class="w-full text-center mt-4 bg-brand-green text-white font-bold py-2 px-4 rounded-lg hover:bg-green-700 transition duration-300">Calculate Capacity</a>
-            </div>
-
-            <!-- Card 3: RV Dump Station Directory -->
-            <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-200 flex flex-col">
-                <div class="bg-red-100 text-brand-red inline-block rounded-full p-3 self-start"><svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg></div>
-                <h3 class="text-lg font-bold text-dark-navy mt-4">RV Dump Station Directory</h3>
-                <p class="text-sm text-gray-600 mt-2 flex-grow">Real-time availability, pricing, and directions for nearby dump stations.</p>
-                <div class="text-xs font-semibold mt-4"><span class="bg-green-100 text-green-800 py-1 px-2 rounded-full">Easy</span><span class="ml-2 text-gray-500">3 min</span></div>
-                <a href="#" class="w-full text-center mt-4 bg-brand-red text-white font-bold py-2 px-4 rounded-lg hover:bg-red-700 transition duration-300">Find Stations</a>
-            </div>
-
-            <!-- More cards... -->
-            <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-200 flex flex-col">
-                <div class="bg-yellow-100 text-yellow-600 inline-block rounded-full p-3 self-start"><svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"></path></svg></div>
-                <h3 class="text-lg font-bold text-dark-navy mt-4">RV Waste Management Assistant</h3>
-                <p class="text-sm text-gray-600 mt-2 flex-grow">Track tank levels, schedule dumps, and get maintenance alerts for your RV septic system.</p>
-                <div class="text-xs font-semibold mt-4"><span class="bg-yellow-100 text-yellow-800 py-1 px-2 rounded-full">Intermediate</span><span class="ml-2 text-gray-500">5 min</span></div>
-                <a href="#" class="w-full text-center mt-4 bg-brand-orange text-white font-bold py-2 px-4 rounded-lg hover:bg-orange-600 transition duration-300">Start Tracking</a>
-            </div>
-
-            <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-200 flex flex-col">
-                <div class="bg-blue-100 text-brand-blue inline-block rounded-full p-3 self-start"><svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg></div>
-                <h3 class="text-lg font-bold text-dark-navy mt-4">Septic Pump Reminder Bot</h3>
-                <p class="text-sm text-gray-600 mt-2 flex-grow">Set automated reminders for septic maintenance, pumping, and inspections.</p>
-                <div class="text-xs font-semibold mt-4"><span class="bg-green-100 text-green-800 py-1 px-2 rounded-full">Easy</span><span class="ml-2 text-gray-500">1 min</span></div>
-                <a href="#" class="w-full text-center mt-4 bg-brand-blue text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300">Set Reminders</a>
-            </div>
-            
-             <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-200 flex flex-col">
-                <div class="bg-red-100 text-brand-red inline-block rounded-full p-3 self-start"><svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div>
-                <h3 class="text-lg font-bold text-dark-navy mt-4">SOS Emergency Guide</h3>
-                <p class="text-sm text-gray-600 mt-2 flex-grow">Immediate help for septic emergencies with step-by-step instructions and professional contacts.</p>
-                <div class="text-xs font-semibold mt-4"><span class="bg-red-100 text-red-800 py-1 px-2 rounded-full">Urgent</span><span class="ml-2 text-gray-500">1 min</span></div>
-                <a href="#" class="w-full text-center mt-4 bg-brand-red text-white font-bold py-2 px-4 rounded-lg hover:bg-red-700 transition duration-300">Get Help Now</a>
-            </div>
-
-             <!-- And so on for the remaining cards... -->
-
-        </div>
-
-    </main>
-
+    </section>
 </div>
 
-<!-- ============================================ -->
-<!-- CTA Banner -->
-<!-- ============================================ -->
-<section class="bg-white pb-20">
-    <div class="container mx-auto px-6">
-        <div class="bg-light-gray p-12 rounded-lg text-center border border-gray-200">
-            <h2 class="text-3xl font-bold text-dark-navy">Get Detailed Tool Reports</h2>
-            <p class="mt-2 max-w-2xl mx-auto text-gray-600">Receive comprehensive PDF reports with your calculations, maintenance schedules, and professional recommendations.</p>
-            <form class="mt-6 flex flex-col sm:flex-row gap-2 max-w-lg mx-auto">
-                <input type="email" placeholder="Enter your email" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-blue focus:outline-none" required>
-                <button type="submit" class="bg-brand-blue text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300">Get Reports</button>
+<div class="container mx-auto px-6 py-16">
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-12">
+        
+        {# Left Sidebar #}
+        <aside class="lg:col-span-1">
+            <div class="sticky top-28">
+                <h3 class="text-lg font-bold text-gray-900 mb-4">Quick Access</h3>
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="font-semibold text-gray-700 mb-2">MOST POPULAR</h4>
+                        <ul class="space-y-1 text-gray-600">
+                            <li><a href="#" class="hover:text-blue-600">Cost Calculator</a></li>
+                            <li><a href="#" class="hover:text-blue-600">Tank Capacity</a></li>
+                            <li><a href="#" class="hover:text-blue-600">Dump Station Directory</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-gray-700 mb-2">CATEGORIES</h4>
+                        <ul class="space-y-1 text-gray-600">
+                            <li class="flex justify-between items-center"><a href="#" class="hover:text-blue-600">Calculators</a> <span class="text-xs bg-gray-200 text-gray-600 px-2 py-0.5 rounded-full">4</span></li>
+                            <li class="flex justify-between items-center"><a href="#" class="hover:text-blue-600">Directories</a> <span class="text-xs bg-gray-200 text-gray-600 px-2 py-0.5 rounded-full">2</span></li>
+                            <li class="flex justify-between items-center"><a href="#" class="hover:text-blue-600">Utilities</a> <span class="text-xs bg-gray-200 text-gray-600 px-2 py-0.5 rounded-full">4</span></li>
+                        </ul>
+                    </div>
+                     <div>
+                        <h4 class="font-semibold text-gray-700 mb-2">RECENT</h4>
+                        <p class="text-sm text-gray-500">No recent tools used</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        {# Right Content: Tools Grid #}
+        <main class="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+            {# Tool Cards - These are placeholders #}
+            <div class="bg-white border border-gray-200 rounded-lg shadow-md p-6 flex flex-col">
+                <div class="bg-blue-100 text-blue-600 rounded-lg h-12 w-12 flex items-center justify-center mb-4"><svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v.01" /></svg></div>
+                <h3 class="text-lg font-bold text-gray-900">Septic System Cost Calculator</h3>
+                <p class="text-gray-600 text-sm my-2 flex-grow">Calculate installation, repair, and maintenance costs for your septic tank with detailed breakdowns.</p>
+                <div class="text-xs my-3 flex items-center gap-2 text-gray-500"><span>★ 5 min</span><span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full font-medium">Easy</span></div>
+                <a href="#" class="w-full mt-auto bg-blue-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300 text-center">Use Calculator</a>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg shadow-md p-6 flex flex-col">
+                <div class="bg-green-100 text-green-600 rounded-lg h-12 w-12 flex items-center justify-center mb-4"><svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7v10l8 4" /></svg></div>
+                <h3 class="text-lg font-bold text-gray-900">Tank Capacity Calculator</h3>
+                <p class="text-gray-600 text-sm my-2 flex-grow">Determine optimal septic tank size for your home or RV based on usage patterns and regulations.</p>
+                <div class="text-xs my-3 flex items-center gap-2 text-gray-500"><span>★ 3 min</span><span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full font-medium">Easy</span></div>
+                <a href="#" class="w-full mt-auto bg-green-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-700 transition duration-300 text-center">Calculate Capacity</a>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg shadow-md p-6 flex flex-col">
+                <div class="bg-red-100 text-red-600 rounded-lg h-12 w-12 flex items-center justify-center mb-4"><svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0zM15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg></div>
+                <h3 class="text-lg font-bold text-gray-900">RV Dump Station Directory</h3>
+                <p class="text-gray-600 text-sm my-2 flex-grow">Find nearby RV dump stations with real-time availability, pricing, and user reviews.</p>
+                <div class="text-xs my-3 flex items-center gap-2 text-gray-500"><span>★ 2 min</span><span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full font-medium">Easy</span></div>
+                <a href="#" class="w-full mt-auto bg-red-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-700 transition duration-300 text-center">Find Stations</a>
+            </div>
+
+             <div class="bg-white border border-gray-200 rounded-lg shadow-md p-6 flex flex-col">
+                <div class="bg-yellow-100 text-yellow-600 rounded-lg h-12 w-12 flex items-center justify-center mb-4"><svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m4-4-4 4 4 4" /></svg></div>
+                <h3 class="text-lg font-bold text-gray-900">RV Waste Management Assistant</h3>
+                <p class="text-gray-600 text-sm my-2 flex-grow">Track tank levels, schedule dumps, and get smart reminders for your RV septic system.</p>
+                <div class="text-xs my-3 flex items-center gap-2 text-gray-500"><span>★ 4 min</span><span class="bg-yellow-100 text-yellow-800 px-2 py-0.5 rounded-full font-medium">Medium</span></div>
+                <a href="#" class="w-full mt-auto bg-yellow-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-yellow-600 transition duration-300 text-center">Start Tracking</a>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg shadow-md p-6 flex flex-col">
+                <div class="bg-blue-100 text-blue-600 rounded-lg h-12 w-12 flex items-center justify-center mb-4"><svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.414a1 1 0 10-1.414-1.414L10 14.172l-1.172-1.172a1 1 0 00-1.414 1.414l2.586 2.586a2 2 0 002.828 0l6.586-6.586a1 1 0 10-1.414-1.414z" /></svg></div>
+                <h3 class="text-lg font-bold text-gray-900">Septic Pump Reminder Bot</h3>
+                <p class="text-gray-600 text-sm my-2 flex-grow">Set automated reminders for septic pumping, inspections, and routine maintenance tasks.</p>
+                <div class="text-xs my-3 flex items-center gap-2 text-gray-500"><span>★ 2 min</span><span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full font-medium">Easy</span></div>
+                <a href="#" class="w-full mt-auto bg-blue-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300 text-center">Set Reminders</a>
+            </div>
+
+             <div class="bg-white border border-gray-200 rounded-lg shadow-md p-6 flex flex-col">
+                <div class="bg-red-100 text-red-600 rounded-lg h-12 w-12 flex items-center justify-center mb-4"><svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg></div>
+                <h3 class="text-lg font-bold text-gray-900">Septic SOS Emergency Guide</h3>
+                <p class="text-gray-600 text-sm my-2 flex-grow">Immediate help for septic emergencies with step-by-step troubleshooting and professional contacts.</p>
+                <div class="text-xs my-3 flex items-center gap-2 text-gray-500"><span>★ 2 min</span><span class="bg-red-100 text-red-800 px-2 py-0.5 rounded-full font-medium">Urgent</span></div>
+                <a href="#" class="w-full mt-auto bg-red-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-700 transition duration-300 text-center">Get Help Now</a>
+            </div>
+            
+            {# Add more tool cards as needed following the pattern above #}
+        </main>
+    </div>
+
+    {# Bottom CTA Section #}
+    <div class="container mx-auto px-6 py-16 mt-10">
+        <div class="bg-blue-50 border-2 border-blue-100 rounded-lg shadow-lg p-8 md:p-12 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Get Detailed Tool Reports</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">Receive comprehensive PDF reports with your calculations, maintenance schedules, and professional recommendations.</p>
+            <form class="mt-8 max-w-lg mx-auto flex flex-col sm:flex-row gap-4">
+                <input type="email" placeholder="Enter your email" required class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                <button type="submit" class="bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300">Get Reports</button>
             </form>
+             <p class="mt-4 text-sm text-gray-500">Professional-grade reports delivered instantly.</p>
         </div>
     </div>
-</section>
+</div>
