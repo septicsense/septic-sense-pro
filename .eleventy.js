@@ -1,4 +1,7 @@
 module.exports = function(eleventyConfig) {
+  // Add the 'year' shortcode to get the current year.
+  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+
   // Tell Eleventy to watch our compiled CSS file for changes.
   eleventyConfig.addWatchTarget("./_site/css/style.css");
 
