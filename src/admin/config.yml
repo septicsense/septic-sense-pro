@@ -2,7 +2,7 @@
 # In this case, we are using GitHub.
 backend:
   name: github
-  repo: YOUR_USERNAME/YOUR_REPOSITORY_NAME # IMPORTANT: Replace with your GitHub username and repository name
+  repo: septicsense/septic-sense-pro # IMPORTANT: Replace with your GitHub username and repository name
   branch: main # The branch to publish changes to.
 
 # This flag will redirect users from the old Git Gateway backend to the new one.
