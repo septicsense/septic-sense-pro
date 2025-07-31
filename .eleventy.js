@@ -1,19 +1,31 @@
 module.exports = function(eleventyConfig) {
-  // This is the crucial line that fixes all the paths
-  eleventyConfig.addPassthroughCopy("./src/assets");
-  eleventyConfig.addPassthroughCopy({ "./src/admin/config.yml": "./admin/config.yml" });
+  // Tell Eleventy to watch our compiled CSS file for changes.
+  eleventyConfig.addWatchTarget("./_site/css/style.css");
 
-  // Add this line to tell Eleventy the base URL of your site
+  // Tell Eleventy to copy the /src/assets/ folder to the /_site/assets/ folder.
+  eleventyConfig.addPassthroughCopy("src/assets");
+  
+  // Tell Eleventy to copy the /src/admin/ folder to the /_site/admin/ folder.
+  eleventyConfig.addPassthroughCopy("src/admin");
+
+  // Configure the input and output directories.
   return {
-    pathPrefix: "/septic-sense-pro/",
     dir: {
       input: "src",
-      output: "_site",
       includes: "_includes",
-      layouts: "_layouts"
+      layouts: "_layouts",
+      data: "_data",
+      output: "_site"
     },
-    templateFormats: ["html", "md", "njk"],
+    // Files to process as templates
+    templateFormats: [
+      "md",
+      "njk",
+      "html"
+    ],
+    // Let Nunjucks process HTML files
     htmlTemplateEngine: "njk",
-    markdownTemplateEngine: "njk",
+    // Let Nunjucks process Markdown files
+    markdownTemplateEngine: "njk"
   };
 };
