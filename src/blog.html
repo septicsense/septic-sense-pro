@@ -115,7 +115,8 @@ permalink: "/blog/index.html"
         {%- for post in collections.post | reverse -%}
         <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 flex flex-col">
             <a href="{{ post.url }}">
-                <img src="{{ post.data.featured_image | default: '/assets/images/blog-image-placeholder.png' }}" alt="{{ post.data.title }}" class="w-full h-40 object-cover">
+                {# THIS IS THE CORRECTED LINE WITH NUNJUCKS SYNTAX #}
+                <img src="{{ post.data.featured_image | default('/assets/images/blog-image-placeholder.png') }}" alt="{{ post.data.title }}" class="w-full h-40 object-cover">
             </a>
             <div class="p-5 flex flex-col flex-grow">
                 {% if post.data.category %}
@@ -126,7 +127,6 @@ permalink: "/blog/index.html"
                     <a href="{{ post.url }}" class="hover:text-blue-600">{{ post.data.title }}</a>
                 </h3>
                 <div class="flex items-center mt-4">
-                    {# You can add author images later if you want #}
                     <span class="text-sm text-gray-600">{{ post.data.author }}</span>
                     <a href="{{ post.url }}" class="ml-auto text-sm font-semibold text-blue-600 hover:text-blue-800">Read More →</a>
                 </div>
