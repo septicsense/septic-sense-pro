@@ -3,23 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    {# The <title> will be populated by the 'title' variable in each page's front matter #}
     <title>{{ title }} | SepticSense</title>
+    
+    {# The <meta name="description"> will be populated by the 'description' variable #}
     <meta name="description" content="{{ description }}">
+    
+    {# This is the critical link to your stylesheet. The path must be absolute. #}
     <link rel="stylesheet" href="/css/style.css">
-    <!-- We will add font links and other meta tags here later -->
+    
+    {# We can add links to web fonts or other global head elements here in the future #}
+
 </head>
 <body class="bg-white text-gray-800 font-sans">
 
-    <!-- Header -->
+    {# Includes the header partial from the _includes folder #}
     {% include "header.njk" %}
 
-    <!-- Main Content -->
+    {# The main content from each individual page will be injected here #}
     <main>
         {{ content | safe }}
     </main>
 
-    <!-- Footer -->
+    {# Includes the footer partial from the _includes folder #}
     {% include "footer.njk" %}
+
+    {# You can add global JavaScript files here if needed, e.g., for a mobile menu #}
 
 </body>
 </html>
