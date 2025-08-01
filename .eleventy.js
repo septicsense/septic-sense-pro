@@ -1,13 +1,13 @@
 module.exports = function(eleventyConfig) {
-    // Correctly handle passthrough copies for assets and admin panel
+    // Tell Eleventy to copy the /src/assets/ folder to the /_site/assets/ folder.
     eleventyConfig.addPassthroughCopy("src/assets");
+    
+    // Tell Eleventy to copy the /src/admin/ folder to the /_site/admin/ folder.
     eleventyConfig.addPassthroughCopy("src/admin");
-    eleventyConfig.addPassthroughCopy({"src/css/style.css": "css/style.css"});
 
-    // Add a watch target for our compiled CSS.
-    eleventyConfig.addWatchTarget("./_site/css/style.css");
+    // Add the 'year' shortcode to get the current year.
+    eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
-    // Return the configuration object
     return {
         dir: {
             input: "src",
